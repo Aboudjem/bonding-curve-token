@@ -1,3 +1,16 @@
+# Bonding Curve Token
+
+
+This smart contract is a Bonding Curve Token, which is a token (BCT) that follows a **specific mathematical formula** for determining its price. 
+
+The contract's primary purpose is to implement a bonding curve mechanism, a mathematical formula that determines the price of the token in question.
+
+It implements the ERC20 standard for tokens and the Ownable standard from the OpenZeppelin library, which allows the contract to have an owner with specific privileges. The contract has several functions, including **buy**, **sell**, **withdraw**, and **getCurrentPrice**.
+
+The **buy** function allows users to purchase tokens with Ether and the sell function allows them to sell tokens at a 10% loss.
+
+The **withdraw** function allows the owner to withdraw any lost Ether and the getCurrentPrice function returns the current price of the token based on the bonding curve formula.
+
 ## Scripts
 
 This repository includes the following scripts in the `package.json` file:
