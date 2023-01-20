@@ -1,7 +1,6 @@
 # Bonding Curve Token
 
-
-This smart contract is a Bonding Curve Token, which is a token (BCT) that follows a **specific mathematical formula** for determining its price. 
+This smart contract is a Bonding Curve Token, which is a token (BCT) that follows a **specific mathematical formula** for determining its price.
 
 The contract's primary purpose is to implement a bonding curve mechanism, a mathematical formula that determines the price of the token in question.
 
