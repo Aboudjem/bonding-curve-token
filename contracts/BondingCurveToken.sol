@@ -122,8 +122,8 @@ contract BondingCurveToken is ERC20, Ownable {
         }
         return
             _slope *
-            ((_tokensToSell *
-                (totalSupply + totalSupply - _tokensToSell + 1)) / 2);
+            ((_tokensToSell * (totalSupply + totalSupply - _tokensToSell + 1)) /
+                2);
     }
 
     /**
