@@ -116,13 +116,14 @@ contract BondingCurveToken is ERC20, Ownable {
     function _calculatePriceForSell(
         uint256 _tokensToSell
     ) private view returns (uint256) {
-        if (_tokensToSell > totalSupply()) {
-            _tokensToSell = totalSupply();
+        uint totalSupply = totalSupply();
+        if (_tokensToSell > totalSupply) {
+            _tokensToSell = totalSupply;
         }
         return
             _slope *
             ((_tokensToSell *
-                (totalSupply() + totalSupply() - _tokensToSell + 1)) / 2);
+                (totalSupply + totalSupply - _tokensToSell + 1)) / 2);
     }
 
     /**
